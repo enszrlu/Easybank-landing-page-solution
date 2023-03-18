@@ -25,11 +25,12 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot.png)
+![](./screenshot-mobile.png)
 
 ### Links
 
 -   Solution URL: [Solution](https://github.com/enszrlu/Easybank-landing-page-solution.git)
--   Live Site URL: [Live Site](https://your-live-site-url.com)
+-   Live Site URL: [Live Site](https://enszrlu.github.io/Easybank-landing-page-solution/)
 
 ## My process
 
