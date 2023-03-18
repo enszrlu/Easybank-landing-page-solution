@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .nav-link-gray {
+        @apply decoration-0 text-grayishBlue visited:text-grayishBlue;
+    }
+    .nav-link-blue {
+        @apply decoration-0 text-darkBlue visited:text-darkBlue;
+    }
+    .nav-link-white {
+        @apply decoration-0 text-white visited:text-white;
+    }
+    .card-small {
+        @apply flex flex-col items-center space-y-3 md:items-start;
+    }
+    .article-card {
+        @apply flex flex-col items-start space-y-3 shadow-xl rounded-md overflow-hidden;
+    }
+    .article-card-image {
+        @apply p-0 m-0 w-full h-[50svw] flex items-center overflow-hidden lg:h-1/2;
+    }
+}
+
+a {
+    position: relative;
+}
+a:hover::before {
+    content: '';
+    position: absolute;
+    top: 35px;
+    width: 100%;
+    left: 0;
+    height: 5px;
+    border-radius: 2px;
+    background: linear-gradient(111.3deg, hsl(136, 65%, 51%) 9.6%, hsl(192, 70%, 51%) 93.6%);
+}
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+#hero-right {
+    background-image: url(../images/bg-intro-desktop.svg);
+    background-position: 10% 70%;
+    background-size: 200%;
+}
+
+#hero-right img {
+    height: 150%;
+    width: auto;
+}
+
+@media (max-width: 768px) {
+    a:hover::before {
+        top: 30px;
+    }
+
+    #hero-right {
+        background-image: url(../images/bg-intro-mobile.svg);
+        background-position: 0% 50%;
+        background-size: 200%;
+        height: 90svw;
+    }
+
+    #hero-right img {
+        height: auto;
+        width: 100%;
+        right: 0;
+    }
+}
