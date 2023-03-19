@@ -4,10 +4,10 @@
 
 @layer components {
     .nav-link-gray {
-        @apply decoration-0 text-grayishBlue visited:text-grayishBlue;
+        @apply decoration-0 text-grayishBlue visited:text-grayishBlue dark:text-white visited:dark:text-white;
     }
     .nav-link-blue {
-        @apply decoration-0 text-darkBlue visited:text-darkBlue;
+        @apply decoration-0 text-darkBlue visited:text-darkBlue dark:text-white dark:visited:text-white;
     }
     .nav-link-white {
         @apply decoration-0 text-white visited:text-white;
@@ -16,7 +16,7 @@
         @apply flex flex-col items-center space-y-3 md:items-start;
     }
     .article-card {
-        @apply flex flex-col items-start space-y-3 shadow-xl rounded-md overflow-hidden;
+        @apply flex flex-col items-start space-y-3 shadow-xl rounded-md overflow-hidden dark:bg-slate-600;
     }
     .article-card-image {
         @apply p-0 m-0 w-full h-[50svw] flex items-center overflow-hidden lg:h-1/2;

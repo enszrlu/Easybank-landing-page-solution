@@ -3,6 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 const plugin = require('tailwindcss/plugin');
 
 module.exports = {
+    darkMode: 'class',
     content: ['./*html'],
     theme: {
         screens: {

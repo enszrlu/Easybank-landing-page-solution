@@ -22,10 +22,17 @@ Users should be able to:
 -   View the optimal layout for the site depending on their device's screen size
 -   See hover states for all interactive elements on the page
 
+Extras I have Included:
+
+-   Dark Mode
+-   Sticky Nav Bar
+
 ### Screenshot
 
-![](./screenshot.png)
-![](./screenshot-mobile.png)
+![](./screenshots/screenshot.png)
+![](./screenshots/screenshot-mobile.png)
+![](./screenshots/screenshot_desktop_dark.png)
+![](./screenshots/screenshot_mobile_dark.png)
 
 ### Links
 
@@ -50,6 +57,8 @@ This is my first project using tailwindcss. I learned more about it. Couple bull
 -   tailwindcss website searchbox helps a lot
 -   Using @apply in css level clears out html significantly. Also allows quick changes to multiple components that uses same classes. Such as nav-links and cards
 -   config file is very powerful to define custom colors and dimensions
+-   Dark mode and remembering user preferences for next session
+-   Sticky navbar
 
 ## Author
 
